@@ -99,7 +99,7 @@ export default function TableComponent({ Countries }) {
                     <section className="form_sidebar flex  gap-5 flex-col w-full md:w-1/4">
                         <div className="sorty ">
                             <label id='sortBy ' htmlFor='sortyBy' className='flex flex-col text-[#6C727F] font-medium gap-2 '>Sort By
-                                <select name="sortBy" id="sortBy" className=' bg-transparent border border-[#272a2f] outline-none text-[#D2D5DA] rounded-lg p-2  appearance-none bg-[url(Expand_down.svg)] bg-no-repeat bg-right pr-10 mr-4 '
+                                <select name="sortBy" id="sortBy" className=' bg-transparent border border-[#272a2f] outline-none text-[#D2D5DA] rounded-lg p-2  appearance-none bg-[url(/Expand_down.svg)] bg-no-repeat bg-right pr-10 mr-4 '
                                     onChange={(e) => setSorty(e.target.value)}>
                                     <option value="population" className='text-[#6C727F]'>population</option>
                                     <option value="name" className='text-[#6C727F]'>Name</option>
@@ -139,12 +139,12 @@ export default function TableComponent({ Countries }) {
                         <div className="statusy flex flex-col gap-2 sm:mb-5">
                             <legend className='text-[#6C727F]'>status</legend>
                             <label htmlFor="un" className='text-[#d2d5da] flex gap-3'>
-                                <input type="checkbox" checked={formData.un} name="un" id="un" className='bg-transparent w-6 h-6 appearance-none border-[2px] border-[#6C727F] checked:bg-[url(./Done_round.svg)] bg-center checked:bg-[#4E80EE] rounded-[4px]' onChange={(e) => updateFormData(e)} />
+                                <input type="checkbox" checked={formData.un} name="un" id="un" className='bg-transparent w-6 h-6 appearance-none border-[2px] border-[#6C727F] checked:bg-[url(/Done_round.svg)] bg-center checked:bg-[#4E80EE] rounded-[4px]' onChange={(e) => updateFormData(e)} />
                                 Member of the United <br  className='sm:hidden md:block'/> Nations
                             </label>
                             <label htmlFor="independent" className='text-[#d2d5da] flex gap-3'>
                                 <input type="checkbox" checked={formData.independent} name="independent" id="independent"
-                                    className=' w-6 h-6 appearance-none bg-transparent border-[2px] border-[#6C727F] checked:bg-[url(./Done_round.svg)] bg-center checked:bg-[#4E80EE] rounded-[4px]' onChange={(e) => updateFormData(e)} />
+                                    className=' w-6 h-6 appearance-none bg-transparent border-[2px] border-[#6C727F] checked:bg-[url(/Done_round.svg)] bg-center checked:bg-[#4E80EE] rounded-[4px]' onChange={(e) => updateFormData(e)} />
                                 Independent
                             </label>
                         </div>
